@@ -16,7 +16,7 @@ el archivo inicia con los estilos generales para todos los botones el cual se us
           @include button;
     }
 
-el agregara agregara el mixin de button y traera estops estilos de button:
+el agregara el mixin del button y traera estos estilos de este:
 
     @mixin button {
     	display: flex;
@@ -34,8 +34,7 @@ el agregara agregara el mixin de button y traera estops estilos de button:
     	}
     }
 
-------------
-### Animaciones
+## Animaciones
 
 ------------
 #### Winona
