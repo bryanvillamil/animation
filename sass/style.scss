@@ -1,4 +1,5 @@
 @import "animation.scss";
+@import "variables.scss";
 @import url('https://fonts.googleapis.com/css?family=Gugi');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 
@@ -6,23 +7,22 @@ html {
     font-size: 10px;
 }
 body {
-    background: #fff;
+    background: $white;
 }
 
 /* Box Bg */
 .bg-1 {
-	background: #FEC135;
+	background: $bg-1;
 	color: #37474f;
 }
 .bg-2 {
-	background: #5DA3CB;
+	background: $bg-2;
 	color: #ECEFF1;
 }
 .bg-3 {
-	background: #11A479;
-	color: #fff;
+	background: $bg-3;
+	color: $white;
 }
-
 
 .content {
     width: 95rem;
@@ -58,7 +58,6 @@ body {
 
 // Animaciones
 
-
 //****************************
 //******** Winona ************
 //****************************
@@ -75,17 +74,17 @@ body {
             border-color: #37474f;
             border: 2px solid;
             &:hover {
-                border-color: #fff;
+                border-color: $white;
             }
         }
     }
     .bg-2 {
         button {
             border-radius: 4rem;
-            color: #fff;
-            border: 3px solid #fff;
+            color: $white;
+            border: 3px solid $white;
             &:hover {
-                border-color: #fff;
+                border-color: $white;
             }
         }
     }
@@ -93,9 +92,57 @@ body {
         button {
             @include button--inverted;
             border-radius: 0;
-            border-color: #fff;
-            color: darken(#11A479, 12%);
-            color: #fff;
+            border-color: $white;
+            color: $white;
+        }
+    }
+}
+
+//****************************
+//******** Ujarak ************
+//****************************
+
+.content__ujarak {
+    button {
+        @include button;
+        @include ujarak;
+        font-size: 1.7rem;
+    }
+    .bg-1 {
+        button {
+            color: #37474f;
+            border-color: #37474f;
+            border: 2px solid;
+            &:hover {
+                color: $white;
+                border-color: #37474f;
+            }
+        }
+    }
+    .bg-2 {
+        button {
+            overflow: hidden;
+            border-radius: 3rem;
+            color: $white;
+            border: 3px solid $white;
+            &:hover {
+                border-color: $white;
+                &:before {
+                    background: darken($bg-2, 20%);
+                }
+            }
+        }
+    }
+    .bg-3 {
+        button {
+            border-radius: 0;
+            border-color: darken($bg-3, 8%);
+            border: 2px dashed;
+            color: darken($bg-3, 18%);
+            &:hover {
+                color: $white;
+                border-color: #444;
+            }
         }
     }
 }

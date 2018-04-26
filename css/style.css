@@ -99,7 +99,7 @@ body {
     opacity: 0;
     color: #fff;
     -webkit-transform: translate3d(0, 25%, 0);
-    transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
     transition: -webkit-transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s;
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
@@ -114,11 +114,11 @@ body {
     .content__winona button:hover:after {
       opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
+              transform: translate3d(0, 0, 0); }
     .content__winona button:hover span {
       opacity: 0;
       -webkit-transform: translate3d(0, -25%, 0);
-      transform: translate3d(0, -25%, 0); }
+              transform: translate3d(0, -25%, 0); }
 .content__winona .bg-1 button {
   color: #37474f;
   border-color: #37474f;
@@ -135,10 +135,78 @@ body {
   color: #7986cb;
   border-radius: 0;
   border-color: #fff;
-  color: #0b6d50;
   color: #fff; }
   .content__winona .bg-3 button:hover {
     border-color: #21333C;
     background-color: #21333C; }
     .content__winona .bg-3 button:hover:after {
       color: #fff; }
+
+.content__ujarak button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 2em;
+  background: none;
+  color: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all .5s;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition: border-color 0.8s, color 0.8s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  font-size: 1.7rem; }
+  .content__ujarak button:focus {
+    outline: none; }
+  .content__ujarak button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #37474f;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transform: scale3d(0.7, 1, 1);
+            transform: scale3d(0.7, 1, 1);
+    transition: -webkit-transform .8s, opacity .8s;
+    transition: transform .8s, opacity .8s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+  .content__ujarak button:hover:before {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+.content__ujarak .bg-1 button {
+  color: #37474f;
+  border-color: #37474f;
+  border: 2px solid; }
+  .content__ujarak .bg-1 button:hover {
+    color: #fff;
+    border-color: #37474f; }
+.content__ujarak .bg-2 button {
+  overflow: hidden;
+  border-radius: 3rem;
+  color: #fff;
+  border: 3px solid #fff; }
+  .content__ujarak .bg-2 button:hover {
+    border-color: #fff; }
+    .content__ujarak .bg-2 button:hover:before {
+      background: #2f6f93; }
+.content__ujarak .bg-3 button {
+  border-radius: 0;
+  border-color: #0d7f5e;
+  border: 2px dashed;
+  color: #08513c; }
+  .content__ujarak .bg-3 button:hover {
+    color: #fff;
+    border-color: #444; }
