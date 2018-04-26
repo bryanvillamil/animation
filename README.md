@@ -42,7 +42,7 @@ el agregara agregara el mixin de button y traera estops estilos de button:
 la animacion winona funciona agregando un button con el atributo `data-text=" "` y dentro el valor que deseamos en la animacion dentro del button tendra un span con un texto por defecto. ejemplo:
 
     <button data-text="Open Project">
-    		<span>Open Project</span>
+    	<span>Open Project</span>
     </button>
 
 **Winona** crea un after dentro y alli agrega en el `content` la propiedad `data-text`, asi da la animacion al button.
