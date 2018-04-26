@@ -19,19 +19,19 @@ el archivo inicia con los estilos generales para todos los botones el cual se us
 el agregara agregara el mixin de button y traera estops estilos de button:
 
     @mixin button {
-    		display: flex;
-   	     align-items: center;
-    	    justify-content: center;
-    		padding: 1em 2em;
-    		border: none;
-    	    cursor: pointer;
-    		position: relative;
-    		z-index: 1;
-    		-webkit-backface-visibility: hidden;
-   	 	-moz-osx-font-smoothing: grayscale;
-    	    &:focus {
-     	        outline: none;
-    	    }
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	padding: 1em 2em;
+    	border: none;
+    	cursor: pointer;
+    	position: relative;
+    	z-index: 1;
+    	-webkit-backface-visibility: hidden;
+    	-moz-osx-font-smoothing: grayscale;
+    	&:focus {
+    		outline: none;
+    	}
     }
 
 ------------
