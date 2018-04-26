@@ -36,7 +36,6 @@ el agregara el mixin del button y traera estos estilos de este:
 
 ## Animaciones
 
-------------
 #### Winona
 ------------
 
