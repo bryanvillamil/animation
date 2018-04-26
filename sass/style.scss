@@ -1,0 +1,13 @@
+@import "animation.scss";
+
+
+.winona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    button {
+        @include button;
+        @include winona;
+    }
+}
