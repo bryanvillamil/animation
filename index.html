@@ -9,13 +9,43 @@
 </head>
 
 <body>
-	<section class="winona">
-		<div class="winona--title">
+	<section class="content content__winona">
+		<div class="content__title">
 			<h2>Winona</h2>
 		</div>
-		<button class="button" data-text="Open Project">
-			<span>Open Project</span>
-		</button>
+		<div class="content__desc">
+			<p>Esta animacion funciona agregando un button con el atributo <strong> data-text="" </strong> y dentro él,
+				agregamos el texto que deseamos aparezca con la animacion.
+			</p>
+
+			<p>Dentro del button agregamos un span con el texto del button por default. Winona crea un after dentro y alli agrega en
+				la propiedad "content" el valor de <strong> data-text</strong>.  ejemplo:
+			</p>
+		</div>
+		<div class="box bg-1">
+			<button class="" data-text="Open Project">
+				<span>Open Project</span>
+			</button>
+			<button class="" data-text="Store Wood">
+				<span>Bienvenido a</span>
+			</button>
+		</div>
+		<div class="box bg-2">
+			<button class="" data-text="Open Project">
+				<span>Open Project</span>
+			</button>
+			<button class="" data-text="Store Wood">
+				<span>Bienvenido a</span>
+			</button>
+		</div>
+		<div class="box bg-3">
+			<button class="" data-text="Open Project">
+				<span>Open Project</span>
+			</button>
+			<button class="" data-text="Store Wood">
+				<span>Bienvenido a</span>
+			</button>
+		</div>
 	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

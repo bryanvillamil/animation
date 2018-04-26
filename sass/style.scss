@@ -1,13 +1,93 @@
 @import "animation.scss";
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+html {
+    font-size: 10px;
+}
+body {
+    background: #cfd8dc;
+}
+
+/* Box Bg */
+.bg-1 {
+	background: #ECEFF1;
+	color: #37474f;
+}
+.bg-2 {
+	background: #7986cb;
+	color: #ECEFF1;
+}
+.bg-3 {
+	background: #37474f;
+	color: #fff;
+}
 
 
-.winona {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.content {
+    width: 95rem;
+    margin: 0 auto;
+    padding: 3rem;
+    &__title {
+        display: flex;
+        justify-content: center;
+        h2 {
+            font-size: 3.5rem;
+            color: #37474f;
+            font-family: 'Gugi', cursive;
+            letter-spacing: .6px;
+            margin: 0;
+        }
+    }
+    &__desc {
+        padding: 0 0 2rem;
+        p {
+            font-size: 1.8rem;
+            color: #333;
+            line-height: 1.5;
+        }
+    }
+    .box {
+        display: flex;
+        justify-content: space-around;
+        padding: 7rem 0;
+    }
+}
+
+
+// Animaciones
+
+
+//****************************
+//******** Winona ************
+//****************************
+
+.content__winona {
     button {
         @include button;
         @include winona;
+        font-size: 1.7rem;
+    }
+    .bg-1 {
+        button {
+            color: #37474f;
+            border-color: #37474f;
+        }
+    }
+    .bg-2 {
+        button {
+            border-radius: 4rem;
+            color: #fff;
+            border: 3px solid #fff;
+            &:hover {
+                border-color: #3f51b5;
+            }
+        }
+    }
+    .bg-3 {
+        button {
+            @include button--inverted;
+            border-radius: 0;
+            border-color: #fff;
+        }
     }
 }
