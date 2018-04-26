@@ -34,7 +34,8 @@ el agregara el mixin del button y traera estos estilos de este:
     	}
     }
 
-## Animaciones
+## Animaciones Botones
+hay 20 animaciones diferentes para estilar botones:
 
 #### Winona
 ------------
@@ -44,4 +45,4 @@ el agregara el mixin del button y traera estos estilos de este:
 
 The code is open source.
 
-## Bryan Villamil Acevedo
+#### Bryan Villamil Acevedo
