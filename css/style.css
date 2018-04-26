@@ -1,5 +1,6 @@
 /* Common button styles */
 @import url("https://fonts.googleapis.com/css?family=Gugi");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 html {
   font-size: 10px; }
 
@@ -37,11 +38,12 @@ body {
       letter-spacing: .6px;
       margin: 0; }
   .content__desc {
-    padding: 0 0 2rem; }
+    padding: 1rem 0 2rem; }
     .content__desc p {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       color: #333;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-family: 'Roboto', sans-serif; }
   .content .box {
     display: -webkit-flex;
     display: -ms-flexbox;
